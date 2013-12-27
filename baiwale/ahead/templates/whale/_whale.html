@@ -1,10 +1,11 @@
 {% load pagination_tags %}
+{% load component %}
 {% load thumbnail %}
 
 {% autopaginate things 28 %}
 <div class="item-wrap clearfix">
   {% for w in things %}
-  <div class="item-thumb">
+  <div class="item-thumb  {% getElement forloop.counter %}">
     <div><a href="{% url 'whale' w.id %}"><img src="/media/{{ w.pic.whale_thumb }}"></a></div>
     <div class="title"><a href="{% url 'whale' w.id %}"><div class="title-space">{{ w.title }}</div></a></div>
     <div class="price">￥{{ w.price }}</div>
