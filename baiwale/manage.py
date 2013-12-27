@@ -3,7 +3,7 @@ import os
 import sys
 
 if __name__ == "__main__":
-    d = True
+    d = False
     if d:
         os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ahead.settings.development")
     else:
