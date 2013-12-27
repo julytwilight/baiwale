@@ -12,7 +12,7 @@ class ElementNode(Node):
 
     def render(self, context):
         loop = self.loop.resolve(context)
-        if int(loop) / 4.0 == 0:
+        if int(loop) % 4 == 0:
             return 'mr0'
         else:
             return ''
