@@ -3,6 +3,8 @@ from .base import *
 
 DEBUG = False
 
+ALLOWED_HOSTS = ['baiwale.com', 'www.baiwale.com']
+
 DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.mysql',
