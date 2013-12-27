@@ -9,17 +9,17 @@
     </div>
     <div class="col-md-6">
       <h1 class="item-title">{{ whale.title }}</h1>
-      <div class="item-price mb10">￥{{ whale.price }}</div>
-      <div class="shop mb10">店铺: <span class="font-normal">{{ whale.shop }}</span></div>
+      {% if whale.price %}<div class="item-price mb10">￥{{ whale.price }}</div>{% endif %}
+      {% if whale.shop %}<div class="shop mb10">店铺: <span class="font-normal">{{ whale.shop }}</span></div>{% endif %}
+      {% if whale.location %}
       <div class="address mb10">
         地址: <span class="font-normal">{{ whale.location }}</span>
         <a href="https://ditu.google.cn/maps?saddr=&daddr={{ whale.location }}" target="_blank">
           <button type="button" class="btn btn-primary btn-xs">查看地图</button>
         </a>
       </div>
+      {% endif %}
       <div class="summary mb10">{{ whale.post | linebreaksbr }}</div>
-      <div class="map">
-      </div>
     </div>
   </div>
 </div>

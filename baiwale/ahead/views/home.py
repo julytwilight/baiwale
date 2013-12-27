@@ -3,7 +3,7 @@ from ..utils.lazy import *
 from ..models import Thing, Category
 
 def index(request):
-    things = Thing.objects.all().order_by('-created_at')
+    things = Thing.objects.exclude(category=3).order_by('-created_at')
     return render(request, "index.html", {'current': 'home', 'things': things})
 
 
