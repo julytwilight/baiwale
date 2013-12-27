@@ -1,0 +1,32 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="{% url 'home' %}" class="navbar-brand">百挖乐</a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li><a href="{% url 'home' %}" {% if current == 'home' %}class="current"{% endif %}>首页</a></li>
+          <li><a href="{% url 'menu' 'fashion' %}" {% if current == 'fashion' %}class="current"{% endif %}>服饰</a></li>
+          <li><a href="{% url 'menu' 'tasty' %}" {% if current == 'tasty' %}class="current"{% endif %}>美食</a></li>
+          <li><a href="{% url 'menu' 'pretty' %}" {% if current == 'pretty' %}class="current"{% endif %}>街拍</a></li>
+          <li><a href="{% url 'about' %}" {% if current == 'about' %}class="current"{% endif %}>调情</a></li>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="https://twitter.com/dessignnet" target="_blank"><img src="/static/images/twitter-icon.jpg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/DessignNet" target="_blank"><img src="/static/images/fb-icon.jpg" alt="fb" /></a>
+          </li>
+        </ul> -->
+      </nav>
+    </div>
+  </div>
+</div>

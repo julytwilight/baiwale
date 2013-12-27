@@ -1,0 +1,15 @@
+{% load pagination_tags %}
+{% load thumbnail %}
+
+{% autopaginate things 28 %}
+<div class="item-wrap clearfix">
+  {% for w in things %}
+  <div class="item-thumb">
+    <div><a href="{% url 'whale' w.id %}"><img src="/media/{{ w.pic.whale_thumb }}"></a></div>
+    <div class="title"><a href="{% url 'whale' w.id %}"><div class="title-space">{{ w.title }}</div></a></div>
+    <div class="price">￥{{ w.price }}</div>
+  </div>
+  {% endfor %}
+</div>
+
+{% paginate %}

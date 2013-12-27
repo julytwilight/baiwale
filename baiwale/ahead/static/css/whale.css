@@ -1,0 +1,87 @@
+/* =base
+-------------------------------------------------------------- */
+body { color: #666; background: #F2F2F2 }
+a { color: #666; text-decoration: none; transition: background 0.3s ease 0s, color 0.3s ease 0s }
+a:hover { color: #222; text-decoration: none }
+.navbar-inverse .navbar-nav > li .current { color: #444 }
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+.pt100 { padding-top: 100px }
+.mb10 { margin-bottom: 10px }
+
+/* =paginate
+-------------------------------------------------------------- */
+.pagination {
+  height: 40px;
+  margin: 20px 0;
+}
+
+.pagination a,
+.pagination span {
+  float: left;
+  padding: 0 14px;
+  line-height: 38px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-left-width: 0;
+  color: #000;
+  font-size: 12px;
+}
+
+.pagination .prev {
+  border-left-width: 1px;
+}
+
+.pagination a:hover,
+.pagination .current {
+  background-color: #f5f5f5;
+}
+
+.pagination .current {
+  color: #999999;
+  cursor: default;
+  background-color: transparent;
+}
+
+
+/* =header
+-------------------------------------------------------------- */
+.navbar-inverse { background: #fff; -moz-box-shadow: 0 0 2px 1px #ccc; -webkit-box-shadow: 0 0 2px 1px #ccc; box-shadow: 0 0 2px 1px #ccc; border: 0 }
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus { color: #444; background-color: transparent }
+
+/* =footer
+-------------------------------------------------------------- */
+.footer { font-size: 12px }
+
+/* =Item Thumb
+-------------------------------------------------------------- */
+.item-thumb { float: left; width: 237px; margin-right: 25px; margin-bottom: 21px; position: relative }
+.item-wrap .mr0 { margin-right: 0px }
+.item-thumb img { display: block; width: 237px; height: 237px; border-top-right-radius: 5px; border-top-left-radius: 5px }
+.item-thumb .title { background-color: #fff; padding: 10px 10px; font-size: 15px; text-align: center }
+.item-thumb .title-space { height: 21px; width: 217px; overflow: hidden }
+.item-thumb .price { color: #00b386; padding: 6px 8px; border-bottom: 1px solid #e0e0e0; font-size: 16px; text-align: center; background-color: #f9f9f9 }
+@media (max-width: 1023px) {
+  .item-wrap { width: 786px; margin: 0 auto; }
+  .item-wrap .mr0 { margin-right: 25px }
+}
+@media (max-width: 785px) {
+  .item-wrap { width: 524px; margin: 0 auto; }
+}
+@media (max-width: 523px) { 
+  .item-wrap { width: 100% }
+  .item-thumb { float: none; margin: 0 auto 21px }
+  .item-wrap .mr0 { float: none; margin: 0 auto 21px }
+}
+
+/* =Item Show
+-------------------------------------------------------------- */
+.item-title { font-size: 18px; margin-top: 0px }
+.item-price { color: #00b386; font-size: 18px; font-family: 'Lato', sans-serif; font-weight: bold }
+#map-canvas { height: 400px; margin-top: 20px; width: 100% }
+

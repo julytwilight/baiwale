@@ -1,0 +1,41 @@
+/* =layout
+-------------------------------------------------------------- */
+body { font-size: 14px; font-family: 'Source Sans Pro', sans-serif; color: #666; line-height: 20px; background: #F2F2F2 }
+a { color: #666; text-decoration: none; transition: background 0.3s ease 0s, color 0.3s ease 0s }
+a:hover { color: #222 }
+.title h1 { font-weight: bold; font-size: 27px; padding-right: 20px }
+.col-per-100 { width: 100% }
+.container { width: 1024px; margin: 0 auto }
+.current { color: #444 }
+
+/* =header
+-------------------------------------------------------------- */
+.header { position: fixed; top: 0; left: 0; padding: 20px 0 15px; -moz-box-shadow: 0 0 2px 1px #ccc; -webkit-box-shadow: 0 0 2px 1px #ccc; box-shadow: 0 0 2px 1px #ccc; width: 100%; background-color: #fff; z-index: 100; height: 25px }
+.menu-nav { list-style-type: none; margin: 0; padding: 0 }
+.menu-nav li { display: inline-block; margin-left: 35px; font-size: 14px; letter-spacing: 1px; position: relative; padding-bottom: 10px; text-transform: uppercase }
+.menu-nav li:first-child { margin-left: 0 }
+.menu-nav li a { text-decoration: none }
+.menu-nav li.current_page_item a,
+.menu-nav li.current-menu-item a { color: #ccc }
+.menu-nav li.current_page_item ul li a,
+.menu-nav li.current-menu-item ul li a { text-decoration: none }
+.header-right { float: right }
+.header-right img { float: left; margin-left: 8px }
+
+
+/* =Item Thumb
+-------------------------------------------------------------- */
+.item-thumb { float: left; width: 237px; margin-right: 25px; margin-bottom: 21px; position: relative }
+.item-thumb img { display: block; width: 237px; height: 237px; border-top-right-radius: 5px; border-top-left-radius: 5px }
+.item-thumb .title { background-color: #fff; padding: 10px 10px; font-size: 15px; text-align: center }
+.item-thumb .price { padding: 6px 8px; border-bottom: 1px solid #e0e0e0; font-size: 16px; text-align: center; background-color: #f9f9f9 }
+
+
+/* =Item Show
+-------------------------------------------------------------- */
+.info { width: 492px; color: #333; }
+.info .title { font-size: 24px  }
+.info .price { font-size: 18px; font-family: 'Lato', sans-serif; font-weight: bold }
+.info .shop { font-size: 15px; font-family: 'Lato', sans-serif; font-weight: bold }
+.info .address { font-size: 15px; font-family: 'Lato', sans-serif; font-weight: bold }
+.info .map a{ background: #39c381; color: #fff; font-size: 14px; display: block; width: 80px; height: 30px; line-height: 30px; text-align: center }
