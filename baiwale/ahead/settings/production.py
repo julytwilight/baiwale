@@ -8,7 +8,7 @@ DATABASES = {
         'ENGINE':'django.db.backends.mysql',
         'NAME': 'baiwale-dev',
         'USER': 'root',
-        'PASSWORD': 'good123',
+        'PASSWORD': 'Agood123',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
