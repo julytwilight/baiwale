@@ -8,7 +8,7 @@
   <div class="item-thumb  {% getElement forloop.counter %}">
     <div><a href="{% url 'whale' w.id %}"><img src="/media/{{ w.pic.whale_thumb }}"></a></div>
     <div class="title"><a href="{% url 'whale' w.id %}"><div class="title-space">{{ w.title }}</div></a></div>
-    <div class="price">￥{{ w.price }}</div>
+    {% if w.price %}<div class="price">￥{{ w.price }}</div>{% endif %}
   </div>
   {% endfor %}
 </div>
